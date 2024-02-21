@@ -1,0 +1,28 @@
+\documentclass[a4paper]{report}
+
+\newcommand{\Version}{}
+
+\makeatletter
+\renewcommand{\maketitle}{%
+    \newpage
+    \begin{center}
+        {\LARGE\@title\par}
+        \vskip 0.5em%
+        {\Large\@author\par}
+        \vskip 1em%
+        {\@date\hskip 1em\Version{}}
+    \end{center}
+}
+\makeatother
+
+\input{version.tex}
+
+\title{\LaTeX\ Template}
+\author{Christopher Doyle}
+
+\begin{document}
+
+\maketitle
+
+\end{document}
+
